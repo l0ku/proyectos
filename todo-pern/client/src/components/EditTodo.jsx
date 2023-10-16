@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Fragment, useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function EditTodo({ todo }) {
   const [description, setDescription] = useState(todo.description);
@@ -21,7 +21,7 @@ function EditTodo({ todo }) {
   }
 
   return (
-    <Fragment>
+    <>
       <button
         type="button"
         className="btn btn-secondary"
@@ -95,7 +95,7 @@ function EditTodo({ todo }) {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
 

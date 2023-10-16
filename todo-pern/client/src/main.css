@@ -1,0 +1,42 @@
+body {
+  background-color: #2b3035;
+  color: #f8f9fa !important;
+}
+
+table {
+  background-color: #2b3035 !important;
+  --bs-table-bg: #2b3035 !important;
+  --bs-table-color: #f8f9fa !important;
+}
+
+.form-control,
+.form-control:focus,
+.form-control::placeholder {
+  color: #f8f9fa;
+}
+
+input.form-control {
+  width: 90%;
+  margin-right: auto;
+  background-color: #2b3035;
+}
+
+input.form-control:focus {
+  background-color: #2b3035;
+}
+
+button.btn-add {
+  margin-right: 0;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer,
+.modal-content {
+  background-color: #2b3035;
+  border-color: #525960;
+}
+
+.btn-close {
+  color: #f8f9fa;
+}

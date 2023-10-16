@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import EditTodo from './EditTodo';
 
@@ -39,7 +39,7 @@ function ListTodo() {
   }, []);
 
   return (
-    <Fragment>
+    <>
       <table className="table mt-5 text-center">
         <thead>
           <tr>
@@ -71,7 +71,7 @@ function ListTodo() {
           })}
         </tbody>
       </table>
-    </Fragment>
+    </>
   );
 }
 
