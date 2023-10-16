@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import './Sidebar.css';
 import NavItem from './NavItem';
 
-function Sidebar() {
+function Sidebar(props) {
   const [isPressed, setIsPressed] = useState(false);
 
   return (
@@ -73,21 +74,35 @@ function Sidebar() {
                 href="https://github.com/l0ku"
                 classes="fa-brands fa-github"
                 title="GitHub"
+                openWindow={true}
               />
               <NavItem
                 href="https://linkedin.com/in/gzanelli"
                 classes="fa-brands fa-linkedin"
                 title="LinkedIn"
+                openWindow={true}
               />
               <NavItem
                 href="https://wa.me/5491169099995"
                 classes="fa-brands fa-whatsapp"
                 title="WhatsApp"
+                openWindow={true}
               />
               <NavItem
                 href="mailto:gonzalozanelli1@gmail.com"
                 classes="fa-solid fa-envelope"
                 title="Email me"
+                openWindow={true}
+              />
+              <NavItem
+                href="javascript:void(0);"
+                classes="fa-regular fa-circle-question"
+                title="About this project"
+                onClick={() => {
+                  props.clickedAbout();
+                  console.log(`Clicked`);
+                }}
+                openWindow={false}
               />
             </ul>
           </div>

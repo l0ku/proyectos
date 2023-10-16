@@ -11,9 +11,7 @@ function Modal(props) {
           opacity: 0.5,
           transition: '0.5s',
         }}
-      >
-        .
-      </div>
+      ></div>
       <div
         className="modal fade in"
         tabIndex="-1"
@@ -41,7 +39,8 @@ function Modal(props) {
             <div className="modal-body">
               <p>
                 In this project, I implement PostgreSQL with the &apos;pg&apos;
-                libraries, following the RESTful architecture in the backend.
+                libraries to practice working with SQL databases, following the
+                RESTful architecture in the backend.
               </p>
             </div>
             <div className="modal-footer">

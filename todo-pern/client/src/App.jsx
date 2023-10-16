@@ -21,7 +21,7 @@ function App() {
     } else {
       return (
         <>
-          <Sidebar />
+          <Sidebar clickedAbout={switchAppStart} />
           <div className="container app-container">
             <InputTodo />
             <ListTodos />

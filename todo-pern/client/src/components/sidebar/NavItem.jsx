@@ -7,8 +7,9 @@ function NavItem(props) {
           className="nav-link text-white"
           aria-current="page"
           href={props.href}
-          target="_blank"
+          target={props.openWindow ? '_blank' : '_self'}
           rel="noreferrer"
+          onClick={props.onClick}
         >
           <i className={`socials-icon ${props.classes}`}></i>
           <span className="socials-title">{props.title}</span>
