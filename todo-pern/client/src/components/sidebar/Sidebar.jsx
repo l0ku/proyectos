@@ -35,12 +35,14 @@ function Sidebar(props) {
             borderBottomRightRadius: isPressed ? 0 : '0.375rem',
             borderColor: isPressed ? '#212529' : '#2b3035',
             backgroundColor: isPressed ? '#212529' : '#2b3035',
-            boxShadow: isPressed ? 'none' : '0.5px 0.5px 10px #0c0d0e',
+            boxShadow: isPressed
+              ? 'none'
+              : '2px 2px 2px 0.1rem rgba(12, 13, 14, 0.15)',
           }}
         >
           <i
             className={`fa-solid ${
-              isPressed ? 'fa-bars' : 'fa-bars-staggered'
+              isPressed ? 'fa-bars-staggered' : 'fa-bars'
             }`}
           ></i>
         </button>

@@ -41,7 +41,7 @@ function Sidebar() {
         >
           <i
             className={`fa-solid ${
-              isPressed ? 'fa-bars' : 'fa-bars-staggered'
+              isPressed ? 'fa-bars-staggered' : 'fa-bars'
             }`}
           ></i>
         </button>

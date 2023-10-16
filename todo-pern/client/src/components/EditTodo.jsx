@@ -24,7 +24,7 @@ function EditTodo({ todo }) {
     <>
       <button
         type="button"
-        className="btn btn-secondary"
+        className="btn btn-secondary edit-button"
         data-bs-toggle="modal"
         data-bs-target={`#id${todo.id}`}
       >

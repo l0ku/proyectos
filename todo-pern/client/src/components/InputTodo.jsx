@@ -11,7 +11,12 @@ function InputTodo() {
   async function onSubmitForm(e) {
     e.preventDefault();
     try {
-      const body = { description };
+      let body;
+      if (description === '' || description === undefined) {
+        body = { description: `You've added an empty TODO.` };
+      } else {
+        body = { description };
+      }
       // eslint-disable-next-line no-unused-vars
       const response = await fetch('http://localhost:3000/todos', {
         method: 'POST',
