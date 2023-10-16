@@ -20,9 +20,7 @@ function Sidebar(props) {
         onClick={() => {
           setIsPressed(!isPressed);
         }}
-      >
-        .
-      </div>
+      ></div>
       <div className="sidebar-container">
         <button
           className="btn btn-dark button-collapse "
